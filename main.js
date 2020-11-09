@@ -29,12 +29,12 @@ for(let i = 0; i < buttons.length; i++) {
             input.value = ""
         }
 
-        if(e.target.textContent === "sin"){
-            input.value = ""
-        }
-
         if(e.target.textContent === "CE"){
-            input.value = input.value.slice(0,-3)
+            if(input.value === "Wrong syntextCE"){
+                input.value = ""
+            }
+            else{
+            input.value = input.value.slice(0,-3)}
         }
 
        
