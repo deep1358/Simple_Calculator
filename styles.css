@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.mainContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 85vh;
+  max-width: 350px;
+  background-color: rgb(23, 24, 26);
+  border-radius: 2rem;
+  box-shadow: 20px 20px 26px -6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+#input {
+  padding: 10px 0;
+  width: 100%;
+  margin: 30px 0 20px 0;
+  background-color: transparent;
+  color: rgb(211, 211, 211);
+  outline: none;
+  font-size: 2rem;
+  border: none;
+  text-align: right;
+  overflow-x: scroll;
+}
+
+.input:focus,
+.input:active {
+  outline: none;
+}
+
+.buttonContainer {
+  border: none;
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-row-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  background-color: rgb(34, 35, 39);
+  color: rgb(211, 211, 211);
+  padding: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.button0 {
+  width: 6rem;
+}
+
+.orange {
+  background-color: rgb(255, 149, 0);
+  color: white;
+}
+
+.green {
+  background-color: rgb(46, 201, 115);
+  color: white;
+}
+
+.red {
+  background-color: rgb(45, 25, 30);
+  color: rgb(197, 56, 65);
+}
